@@ -6,12 +6,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{25D860D9-3838-4CAF-976F-F071667FB03B}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>MultiGenTemperatureIcon</RootNamespace>
-    <AssemblyName>MultiGenTemperatureIcon</AssemblyName>
+    <RootNamespace>MultiGenTemperatureIconLeft</RootNamespace>
+    <AssemblyName>MultiGenTemperatureIconLeft</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -19,7 +20,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>MultiGenTemperatureIcon.xml</DocumentationFile>
+    <DocumentationFile>MultiGenTemperatureIconLeft.xml</DocumentationFile>
     <DefineConstants>_MYFORMS=True</DefineConstants>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
@@ -29,7 +30,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>MultiGenTemperatureIcon.xml</DocumentationFile>
+    <DocumentationFile>MultiGenTemperatureIconLeft.xml</DocumentationFile>
     <DefineConstants>_MYFORMS=True</DefineConstants>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
@@ -70,15 +71,15 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MultiGenTemperatureIconLeft.Designer.vb">
+      <DependentUpon>MultiGenTemperatureIconLeft.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MultiGenTemperatureIconLeft.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
-    </Compile>
-    <Compile Include="MultiGenTemperatureIcon.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="MultiGenTemperatureIcon.Designer.vb">
-      <DependentUpon>MultiGenTemperatureIcon.vb</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Resources.Designer.vb">
@@ -93,14 +94,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="MultiGenTemperatureIconLeft.resx">
+      <DependentUpon>MultiGenTemperatureIconLeft.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MultiGenTemperatureIcon.resx">
-      <DependentUpon>MultiGenTemperatureIcon.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

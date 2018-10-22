@@ -8,10 +8,10 @@ Imports System.Runtime.InteropServices
 
 ' Controllare i valori degli attributi degli assembly
 
-<Assembly: AssemblyTitle("MultiGenTemperatureIcon")>
+<Assembly: AssemblyTitle("MultiGenTemperatureIconLeft")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("MultiGenTemperatureIcon")>
+<Assembly: AssemblyProduct("MultiGenTemperatureIconLeft")>
 <Assembly: AssemblyCopyright("Copyright ©  2018")>
 <Assembly: AssemblyTrademark("")>
 
